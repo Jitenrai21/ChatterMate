@@ -1,0 +1,126 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hello",
+          "Hey there",
+          "Good morning",
+          "Good evening",
+          "How's it going?"
+        ],
+        "responses": [
+          "Hello! How can I assist you today?",
+          "Hi there, what can I do for you?",
+          "Hey! Need help with something?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "Goodbye", "See you later", "Take care"],
+        "responses": [
+          "Goodbye! Have a great day.",
+          "See you soon!",
+          "Take care, feel free to ask me anytime."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "Appreciate it", "Thanks a lot"],
+        "responses": [
+          "You're welcome!",
+          "Happy to help!",
+          "Anytime!"
+        ]
+      },
+      {
+        "tag": "subject_support",
+        "patterns": [
+          "Can you help me with math?",
+          "Explain this science concept",
+          "What is the capital of France?",
+          "Help with history",
+          "I need assistance with programming"
+        ],
+        "responses": [
+          "Sure! What topic in math do you need help with?",
+          "I can help with that! Could you specify your question?",
+          "The capital of France is Paris.",
+          "What programming language are you working with?"
+        ]
+      },
+      {
+        "tag": "task_management",
+        "patterns": [
+          "Set a reminder",
+          "Add this to my to-do list",
+          "Schedule an appointment for tomorrow",
+          "Remind me about the meeting"
+        ],
+        "responses": [
+          "Got it! What time should I set the reminder?",
+          "Adding it to your to-do list now.",
+          "Scheduled! Let me know if there are changes."
+        ]
+      },
+      {
+        "tag": "faq_support",
+        "patterns": [
+          "What are your working hours?",
+          "How can I reset my password?",
+          "Do you have a support email?",
+          "What services do you offer?"
+        ],
+        "responses": [
+          "Our working hours are 9 AM to 5 PM, Monday to Friday.",
+          "To reset your password, go to the account settings page and click 'Reset Password'.",
+          "You can reach our support team at support@example.com.",
+          "We provide virtual assistant and educational support services."
+        ]
+      },
+      {
+        "tag": "educational_resources",
+        "patterns": [
+          "Provide me with study materials",
+          "Do you have resources on physics?",
+          "Can I get programming tutorials?",
+          "Any practice questions for algebra?"
+        ],
+        "responses": [
+          "Here are some study materials for physics: [Link]",
+          "I can share some programming tutorials. What language are you interested in?",
+          "Sure, here are a few practice questions for algebra: [Link]."
+        ]
+      },
+      {
+        "tag": "os_control",
+        "patterns": [
+          "Open a file",
+          "Launch Chrome",
+          "Check my system storage",
+          "Take a screenshot"
+        ],
+        "responses": [
+          "Opening the requested file...",
+          "Launching Chrome now...",
+          "Here's your system storage status: [data].",
+          "Screenshot taken and saved to your desktop."
+        ]
+      },
+      {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a joke",
+          "Do you know something funny?",
+          "Make me laugh"
+        ],
+        "responses": [
+          "Why did the scarecrow win an award? Because he was outstanding in his field.",
+          "Why don't scientists trust atoms? Because they make up everything!",
+          "What do you call fake spaghetti? An impasta!"
+        ]
+      }
+    ]
+  }
+  
