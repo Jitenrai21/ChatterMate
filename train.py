@@ -4,7 +4,6 @@ import numpy as np
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-
 from model import NeuralNet 
 
 with open('intents.json', 'r') as f:
@@ -86,7 +85,7 @@ for epoch in range(num_epochs):
     if (epoch + 1) % 100 == 0:
         print(f'epoch {epoch + 1}/{num_epochs}, loss = {loss.item():.4f}')
 
-print(f'final loss, loss = {loss.item():.4f}')
+print(f'Final loss, loss = {loss.item():.4f}')
 
 data = {
     'model_state':model.state_dict(),

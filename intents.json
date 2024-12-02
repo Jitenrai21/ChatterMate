@@ -35,80 +35,6 @@
         ]
       },
       {
-        "tag": "subject_support",
-        "patterns": [
-          "Can you help me with math?",
-          "Explain this science concept",
-          "What is the capital of France?",
-          "Help with history",
-          "I need assistance with programming"
-        ],
-        "responses": [
-          "Sure! What topic in math do you need help with?",
-          "I can help with that! Could you specify your question?",
-          "The capital of France is Paris.",
-          "What programming language are you working with?"
-        ]
-      },
-      {
-        "tag": "task_management",
-        "patterns": [
-          "Set a reminder",
-          "Add this to my to-do list",
-          "Schedule an appointment for tomorrow",
-          "Remind me about the meeting"
-        ],
-        "responses": [
-          "Got it! What time should I set the reminder?",
-          "Adding it to your to-do list now.",
-          "Scheduled! Let me know if there are changes."
-        ]
-      },
-      {
-        "tag": "faq_support",
-        "patterns": [
-          "What are your working hours?",
-          "How can I reset my password?",
-          "Do you have a support email?",
-          "What services do you offer?"
-        ],
-        "responses": [
-          "Our working hours are 9 AM to 5 PM, Monday to Friday.",
-          "To reset your password, go to the account settings page and click 'Reset Password'.",
-          "You can reach our support team at support@example.com.",
-          "We provide virtual assistant and educational support services."
-        ]
-      },
-      {
-        "tag": "educational_resources",
-        "patterns": [
-          "Provide me with study materials",
-          "Do you have resources on physics?",
-          "Can I get programming tutorials?",
-          "Any practice questions for algebra?"
-        ],
-        "responses": [
-          "Here are some study materials for physics: [Link]",
-          "I can share some programming tutorials. What language are you interested in?",
-          "Sure, here are a few practice questions for algebra: [Link]."
-        ]
-      },
-      {
-        "tag": "os_control",
-        "patterns": [
-          "Open a file",
-          "Launch Chrome",
-          "Check my system storage",
-          "Take a screenshot"
-        ],
-        "responses": [
-          "Opening the requested file...",
-          "Launching Chrome now...",
-          "Here's your system storage status: [data].",
-          "Screenshot taken and saved to your desktop."
-        ]
-      },
-      {
         "tag": "funny",
         "patterns": [
           "Tell me a joke",
@@ -120,7 +46,200 @@
           "Why don't scientists trust atoms? Because they make up everything!",
           "What do you call fake spaghetti? An impasta!"
         ]
+      },
+      {
+        "tag": "study_help",
+        "patterns": [
+          "Can you help me study?",
+          "I need educational support",
+          "Explain something to me",
+          "Help me with my studies"
+        ],
+        "responses": [
+          "Of course! Tell me the topic or subject you'd like help with.",
+          "I'm here to support your learning. What do you need assistance with?",
+          "Sure! Feel free to ask any questions related to your studies."
+        ]
+      },
+      {
+        "tag": "python_help",
+        "patterns": [
+          "What is Python?",
+          "Can you help me with Python?",
+          "Explain Python basics",
+          "Teach me about Python programming"
+        ],
+        "responses": [
+          "Python is a versatile programming language known for its simplicity and readability. What specific topic would you like to learn about?",
+          "To write a function in Python, use the 'def' keyword. For example: `def my_function():`. Need a deeper example?",
+          "Sure, I can help with Python! Do you need help with syntax, libraries, or debugging?",
+          "Python basics include variables, data types, loops, and functions. Where should we start? You can install Python from the official website: https://www.python.org. Need help setting it up?"
+        ]
+      },
+      {
+        "tag": "java_help",
+        "patterns": [
+          "What is Java?",
+          "Can you help me with Java?",
+          "Explain Java basics",
+          "Teach me about Java programming"
+        ],
+        "responses": [
+          "Java is a high-level, object-oriented programming language used for developing platform-independent applications. What specific area are you interested in?",
+          "To write a class in Java, use the 'class' keyword. For example: `class MyClass {}`. Want to know more about constructors?",
+          "Yes, I can assist with Java! Do you need help with OOP concepts, libraries, or debugging?",
+          "Java basics include classes, objects, methods, and loops. Let me know where to start! You can download and install the Java Development Kit (JDK) from https://www.oracle.com/java. Need guidance?"
+        ]
+      },
+      {
+        "tag": "javascript_help",
+        "patterns": [
+          "What is JavaScript?",
+          "Can you help me with JavaScript?",
+          "Explain JavaScript basics",
+          "Teach me about JavaScript programming"
+        ],
+        "responses": [
+          "JavaScript is a versatile language for web development, enabling dynamic content on websites. What do you want to learn about?",
+          "To write a function in JavaScript, use `function myFunction() {}`. Do you need an example with parameters?",
+          "Sure, I can assist with JavaScript! Are you looking for help with DOM manipulation, ES6 features, or debugging?",
+          "JavaScript basics include variables, functions, and event handling. Where would you like to start?",
+          "Java and JavaScript are different. Java is object-oriented and used for apps, while JavaScript is mostly for interactive web content."
+        ]
+      },
+      {
+        "tag": "csharp_help",
+        "patterns": [
+          "What is C#?",
+          "Can you help me with C#?",
+          "Explain C# basics",
+          "Teach me about C# programming",
+          "What is the difference between C and C#?"
+        ],
+        "responses": [
+          "C# is a modern, object-oriented programming language designed for the .NET platform. What aspect would you like to explore?",
+          "To write a method in C#, use: `public void MyMethod() {}`. Need an example with parameters?",
+          "Yes, I can assist with C#! Are you learning about .NET, LINQ, or Windows application development?",
+          "C# basics include variables, classes, and inheritance. Let me know what to focus on!",
+          "C is a procedural language, while C# is object-oriented and used for modern app development."
+        ]
+      },
+      {
+        "tag": "cpp_help",
+        "patterns": [
+          "What is C++?",
+          "Can you help me with C++?",
+          "Explain C++ basics",
+          "Teach me about C++ programming"
+        ],
+        "responses": [
+          "C++ is an extension of C with object-oriented features. It's widely used for system programming and game development. What do you need help with?",
+          "To write a function in C++, use: `void myFunction() {}`. Do you need an example with return values?",
+          "Sure, I can assist with C++! Are you working on algorithms, classes, or memory management?",
+          "C++ basics include classes, objects, and pointers. Let me know your focus area!",
+          "C++ is object-oriented, while C is procedural. C++ allows you to use classes and features like inheritance."
+        ]
+      },
+      {
+        "tag": "html_help",
+        "patterns": [
+          "What is HTML?",
+          "How do I create a webpage?",
+          "Can you help me with HTML?",
+          "Explain HTML basics",
+          "Teach me about HTML programming",
+          "How does HTML work?"
+        ],
+        "responses": [
+          "HTML (HyperText Markup Language) is the standard language for creating webpages. What do you want to learn about?",
+          "To create a basic webpage, start with: `<html><head></head><body></body></html>`. Want help adding elements?",
+          "Yes, I can assist with HTML! Are you learning about forms, tables, or semantic tags?",
+          "HTML basics include tags like `<div>`, `<p>`, and `<a>`. Where do you want to start?",
+          "HTML works by structuring content on the web using elements and attributes. Do you need a deeper dive?"
+        ]
+      },
+      {
+        "tag": "css_help",
+        "patterns": [
+          "What is CSS?",
+          "How do I style a webpage?",
+          "Can you help me with CSS?",
+          "Explain CSS basics",
+          "Teach me about CSS programming",
+          "What is the difference between CSS and HTML?"
+        ],
+        "responses": [
+          "CSS (Cascading Style Sheets) is used to style and layout webpages. What specific feature do you want to learn about?",
+          "To style a webpage, you can use inline, internal, or external CSS. Need an example of CSS syntax?",
+          "Sure, I can help with CSS! Do you need assistance with selectors, flexbox, or grid?",
+          "CSS basics include properties like color, font-size, and margin. What would you like to explore?",
+          "HTML structures content, while CSS styles it. For example, HTML creates a heading, and CSS changes its color."
+        ]
+      },
+      {
+        "tag": "sql_help",
+        "patterns": [
+          "What is SQL?",
+          "How do I query a database?",
+          "Can you help me with SQL?",
+          "Explain SQL basics",
+          "Teach me about SQL programming",
+          "How does SQL work?"
+        ],
+        "responses": [
+          "SQL (Structured Query Language) is used to manage and query relational databases. What do you need help with?",
+          "To query a database, use a SELECT statement. Example: `SELECT * FROM table_name;`. Want to know about joins?",
+          "Yes, I can assist with SQL! Are you learning about queries, indexing, or database design?",
+          "SQL basics include SELECT, INSERT, UPDATE, and DELETE statements. Let me know where to start!",
+          "SQL works by interacting with databases using structured commands. Do you want an example?"
+        ]
+      },
+      {
+        "tag": "open_github",
+        "patterns": [
+          "Open GitHub for source code",
+          "Launch GitHub",
+          "Open GitHub account",
+          "Can you open GitHub repo?",
+          "Access source code"
+        ],
+        "responses": [
+          "Opening GitHub...",
+          "Launching GitHub for you...",
+          "Sure, opening the source code GitHub repository."
+        ]
+      },
+      {
+        "tag": "open_youtube",
+        "patterns": [
+          "Open YouTube",
+          "Launch YouTube",
+          "Can you open YouTube?",
+          "Start YouTube",
+          "Go to YouTube"
+        ],
+        "responses": [
+          "Opening YouTube...",
+          "Launching YouTube for you...",
+          "Sure, opening YouTube now."
+        ]
+      },
+      {
+        "tag": "open_chatgpt",
+        "patterns": [
+          "Open ChatGPT",
+          "Launch ChatGPT",
+          "Can you open ChatGPT?",
+          "Access ChatGPT",
+          "Start ChatGPT"
+        ],
+        "responses": [
+          "Opening ChatGPT...",
+          "Launching ChatGPT for you...",
+          "Sure, opening ChatGPT now."
+        ]
       }
+      
     ]
   }
   

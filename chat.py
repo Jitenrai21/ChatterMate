@@ -1,6 +1,7 @@
 import random
 import json
 import torch
+import webbrowser
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
@@ -23,6 +24,12 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
+sites = {
+    'open_github': 'https://github.com/Jitenrai21/ChatterMate',
+    'open_youtube': 'https://www.youtube.com/',
+    'open_chatgpt': 'https://chatgpt.com/'
+}
+
 bot_name = 'ChatterMate'
 print("Let's chat! Press 'Q' to exit.")
 while True:
@@ -44,10 +51,13 @@ while True:
     prob = probs[0][predicted.item()]
 
     if prob.item() > 0.75:
-
-        for intent in intents['intents']:
-            if tag == intent['tag']:
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
+        if tag in sites:
+            print(f"{bot_name}: Opening {tag.replace('_', ' ').title()}...")
+            webbrowser.open(sites[tag])
+        else:
+            for intent in intents['intents']:
+                if tag == intent['tag']:
+                    print(f"{bot_name}: {random.choice(intent['responses'])}")
     
     else:
         print(f"{bot_name}: Sorry I couldn't quite understand it.")
