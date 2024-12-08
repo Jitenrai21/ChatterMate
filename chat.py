@@ -57,7 +57,11 @@ while True:
         else:
             for intent in intents['intents']:
                 if tag == intent['tag']:
-                    print(f"{bot_name}: {random.choice(intent['responses'])}")
+                    if '_help' in tag:
+                        combined_response = '\n'.join(intent['responses'])
+                        print(f'{bot_name}: {combined_response}')
+                    else:
+                        print(f"{bot_name}: {random.choice(intent['responses'])}")
     
     else:
         print(f"{bot_name}: Sorry I couldn't quite understand it.")
