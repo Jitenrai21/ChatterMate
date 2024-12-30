@@ -1,0 +1,4 @@
+nltk
+spacy
+google-api-python-client
+torch
