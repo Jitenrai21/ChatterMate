@@ -37,35 +37,8 @@ sites = {
 bot_name = 'ChatterMate'
 user_context = {}
 
-def track_context(user_id, message):
-    if user_id not in user_context:
-        user_context[user_id] = {'history':[]}
-    user_context[user_id]['history'].append(message)
-
-def extract_context(message):
-    doc = nlp(message)
-    entities = [(ent.text, ent.label_) for ent in doc.ents]
-    return entities
-
-def recommend_action(context):
-    last_message = context['history'][-1].lower()
-    for intent in intents['intents']:
-        if any(keyword in last_message for keyword in intent.get('patterns', [])):
-            return random.choice(intent.get('responses', []))
-    return "I'm not sure how to help with that. :("
-
-def chat_response(user_id, user_message):
-    track_context(user_id, user_message)
-
-    entities = extract_context(user_message)
-
-    recommendation = recommend_action(user_context[user_id])
-
-    return recommendation
-
 print("Let's chat! Press 'Q' to exit.")
 while True:
-    user_id = 'default_user'
     sentence = input('You: ')
     if sentence.lower() == 'q':
         break
@@ -97,5 +70,4 @@ while True:
                         print(f"{bot_name}: {random.choice(intent['responses'])}")
     
     else:
-        response = chat_response(user_id, sentence)
-        print(f"{bot_name}: {response}")
+        print(f"{bot_name}: I'm not sure how to help with that. :(")
